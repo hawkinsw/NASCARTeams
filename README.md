@@ -36,7 +36,7 @@ dotnet add package Microsoft.Extensions.Logging.Debug
 ## Running the application locally
 
 ```
-$ dotnet run watch
+$ dotnet watch run
 ```
 
 ## License
