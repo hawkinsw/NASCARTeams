@@ -33,6 +33,12 @@ dotnet add package Microsoft.Extensions.Logging.Debug
 
 1. [Adding controllers and working with a database](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-5.0&tabs=visual-studio-code)
 
+## Running the application locally
+
+```
+$ dotnet run watch
+```
+
 ## License
 
 Reuse under the GPL-3.0.
