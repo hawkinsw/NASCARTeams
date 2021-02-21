@@ -1,0 +1,22 @@
+﻿@model IEnumerable<NASCARTeams.Models.Team>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @{
+        var teamCount = Model.Count();
+    }
+    @if (teamCount == 0)
+    {
+        <p>There are no teams in the database.</p>
+    }
+    else if (teamCount==1) {
+        <p>There is <a asp-action="View">one</a> team in the database.</p>
+    }
+    else
+    {
+        <p>There are <a asp-controller="NASCARTeams">@teamCount</a> teams in the database.</p>
+    }
+</div>
